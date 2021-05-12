@@ -1,0 +1,13 @@
+cd nv-codec-headers &&\
+     make -j8 && \
+      make install -j8
+
+cd ffmpeg && ./configure \
+  --enable-nonfree --disable-shared \
+  --enable-nvenc --enable-cuda \
+  --enable-cuvid --enable-libnpp \
+  --extra-cflags=-I/usr/local/cuda/include \
+  --extra-cflags=-I/usr/local/include \
+  --extra-ldflags=-L/usr/local/cuda/lib64 && \
+  make -j8 && \
+  make install -j8
