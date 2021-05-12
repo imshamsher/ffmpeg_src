@@ -1,0 +1,1 @@
+config:x86:x86_64:generic:linux:gcc 7 (Ubuntu 7.5.0-3ubuntu1~18.04):--enable-nonfree --disable-shared --enable-nvenc --enable-cuda --enable-cuvid --enable-libnpp --extra-cflags=-I/usr/local/cuda/include --extra-cflags=-I/usr/local/include --extra-ldflags=-L/usr/local/cuda/lib64
